@@ -1,0 +1,260 @@
+
+/* RESET E BASE GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8ff;
+  color: #3b0066;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #730099;
+  margin-top: 40px;
+}
+
+
+/* CABEÇALHO (HEADER) */
+header {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Gradiente roxo vibrante */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.4s ease-in-out;
+}
+
+header:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Inverte ao passar o mouse */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* NAVEGAÇÃO     */
+nav a {
+  color: #5e00aa;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #9c27b0;
+}
+
+
+/* SEÇÕES DA PÁGINA   */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #4a0072;
+  border-bottom: 2px solid #e1cfff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* BOTÃO: PERSONALIZAR COPOS */
+#botao-personalizar {
+  display: block;
+  margin: 20px auto;
+  background-color: #9c27b0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botao-personalizar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#botao-personalizar:hover {
+  background-color: #ab47bc;
+}
+
+
+/* CARTÕES DE CONTEÚDO */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* BLOCO DE MONTAGEM (MENU) */
+.menu {
+  background-color: #f0e7ff;
+  border-left: 5px solid #ab47bc;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+
+/* GALERIA DE COPOS */
+.copos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.copo1,
+.copo2 {
+  background-color: #fbeeff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.copo1:hover,
+.copo2:hover {
+  transform: scale(1.03);
+}
+
+
+
+/* BOTÕES DE AÇÃO     */
+.botao-finalizar {
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botao-finalizar:hover {
+  background-color: #6a1b9a;
+}
+
+/* RODAPÉ     */
+footer {
+  background-color: #f3eaff;
+  color: #5e008c;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid #d3cce3;
+  margin-top: 60px;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+
+  .copos {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .copo1,
+  .copo2 {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  #botao-personalizar {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .botao-finalizar {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+}
